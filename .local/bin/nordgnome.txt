@@ -1,0 +1,57 @@
+# GNOME Desktop Customization | Minimalist Dark Desktop with Nord Color Theme
+# https://www.youtube.com/watch?v=zOUTasMuZl4
+
+sudo apt install gnome-tweaks
+
+# install gnome user themes extension
+https://extensions.gnome.org/extension/19/user-themes/
+
+# download resources
+https://www.pling.com/p/1965520/
+
+# install Whitesur GTK Theme
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
+cd WhiteSur-gtk-theme
+./install.sh --nord -l -c Dark -m -p 60 -P bigger --normal
+# note: will require sudo
+
+# install Nordzy icon theme
+git clone https://github.com/alvatip/Nordzy-icon.git
+cd Nordzy-icon/
+./install.sh -t default -c -p
+
+# installing cursors, fonts and wallpapers
+
+# install Sunity-Cursors
+git clone https://github.com/alvatip/Sunity-cursors.git
+cd Sunity-cursors
+./install.sh
+
+# install fonts
+# extract fonts and backgrouns from Downloads/ and copy to .local/share .local/backgrounds
+
+# install Gnome extensions
+
+https://extensions.gnome.org/extension/615/appindicator-support/
+https://extensions.gnome.org/extension/5338/aylurs-widgets/ # as per gh no longer maintained
+https://extensions.gnome.org/extension/3193/blur-my-shell/
+https://extensions.gnome.org/extension/5530/circular-widgets/ # not compatible
+# dash to dock but already have cosmic dock
+https://extensions.gnome.org/extension/1319/gsconnect/
+https://extensions.gnome.org/extension/3843/just-perfection/
+https://extensions.gnome.org/extension/1514/rounded-corners/
+https://extensions.gnome.org/extension/5237/rounded-window-corners/
+
+# apply GTK theme, icons, cursors, fonts
+# use gnome tweaks
+
+# install gnome extensions manager
+
+# install glava audio viz
+git clone https://github.com/jarcode-foss/glava
+cd glava
+meson build --prefix /usr
+ninja -C build
+sudo ninja -C build install
+
+# install downloaded glava configs in .config/glava and .autostart
