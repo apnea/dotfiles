@@ -13,7 +13,7 @@ fi
 set -u
 
 TAPE_NAME="$1"
-BASE_DIR="$HOME/minidv"
+BASE_DIR="$HOME/dv"
 
 # make sure the general working directory is there
 [ -d "${BASE_DIR}" ] || mkdir "${BASE_DIR}"
