@@ -1,0 +1,2 @@
+#!/bin/bash
+while true; do curl -s -o /dev/null -w "%{http_code}" http://api.bookinfo.club/ | grep -q "521" && echo "Website is down (Cloudflare 521 error)" || echo "Website is up"; sleep 1m; done
