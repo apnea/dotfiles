@@ -29,7 +29,7 @@ echo -e "\nGo...."
 # find $PC_DIR -type f -mtime -15 -print0 | rsync -ah --ignore-existing --progress --no-times --no-perms --no-group --temp-dir="$TMPDIR" --include-from=- "$PHONE_DIR"/
 
 # Find the two most recently modified subdirectories and sync them
-find "$PC_DIR" -mindepth 1 -maxdepth 1 -type d -printf '%T@ %p\n' | sort -n -r | head -n 2 | cut -d' ' -f2- | xargs -I{} rsync -ahv --ignore-existing --progress --no-times --no-perms --no-group --temp-dir="$TMPDIR" "{}" "$PHONE_DIR"
+find "$PC_DIR" -mindepth 1 -maxdepth 1 -type d -printf '%T@ %p\n' | sort -n -r | head -n 1 | cut -d' ' -f2- | xargs -I{} rsync -ahv --ignore-existing --progress --no-times --no-perms --no-group --temp-dir="$TMPDIR" "{}" "$PHONE_DIR"
 
 echo "Done."
 
