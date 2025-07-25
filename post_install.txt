@@ -9,4 +9,10 @@ uv
 ### shell
 curl -fsSL https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install.sh | bash
 wget -O- https://raw.githubusercontent.com/emsi/claude-desktop/refs/heads/main/install-claude-desktop.sh | bash
+curl -sS https://starship.rs/install.sh | sh
 
+### apt
+alacritty
+fish
+qtile
+fonts-firacode
