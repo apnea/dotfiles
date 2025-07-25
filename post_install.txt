@@ -5,3 +5,7 @@ npm install -g @google/gemini-cli
 
 ### python
 uv
+
+### shell
+curl -fsSL https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install.sh | bash
+./install-claude-desktop.sh
