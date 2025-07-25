@@ -118,4 +118,12 @@ fi
 
 eval "$(starship init bash)"
 export PATH="$HOME/.local/mybin:$PATH"
-export PATH="$HOME/.local/mybin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/pete/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+export PATH="$HOME/.local/bin:$PATH"
