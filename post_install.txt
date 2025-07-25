@@ -1,0 +1,7 @@
+# post install list
+### npm
+
+npm install -g @google/gemini-cli
+
+### python
+uv
