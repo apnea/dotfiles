@@ -3,8 +3,11 @@
 
 npm install -g @google/gemini-cli
 
-### python
+### pip
 uv
+
+### uvx
+uvx voice-mode
 
 ### shell
 curl -fsSL https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install.sh | bash
