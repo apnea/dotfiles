@@ -56,6 +56,7 @@ keys = [
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    Key([mod], "u", lazy.spawn(f"{terminal} -e ut.sh"), desc="Launch UT in floating terminal"),
 ]
 
 groups = [Group(i) for i in "123456789"]
@@ -180,6 +181,7 @@ floating_layout = layout.Floating(
         Match(wm_class="ssh-askpass"),  # ssh-askpass
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
+        Match(title="Default - Winedesktop"),  # This depends on your terminal setting the title
     ]
 )
 auto_fullscreen = True
