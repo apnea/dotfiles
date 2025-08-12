@@ -24,3 +24,9 @@ parcellite
 
 qemu
 qemu-guest-agent
+
+### more complex:
+
+### install libnss-libvirt and enable dns resolution of vms under libvirt by appending libvirt to /etc/resolv.conf
+sudo apt install libnss-libvirt
+sudo sed -i '/^hosts:/ s/$/ libvirt/' /etc/nsswitch.conf
