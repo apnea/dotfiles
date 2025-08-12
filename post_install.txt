@@ -22,3 +22,5 @@ fonts-firacode
 kitty
 parcellite
 
+qemu
+qemu-guest-agent
