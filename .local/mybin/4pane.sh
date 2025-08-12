@@ -1,7 +1,5 @@
 #!/bin/bash
-
-# Launch kitty with 4 panes
-# does not work on my old kitty
+# Launch kitty with 4 panes for debuggin/monitoring
 kitty --title "Terminatore" \
     --session - <<EOF
 layout splits
